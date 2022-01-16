@@ -1,12 +1,14 @@
 
 import Servicies.Utils;
-import Fruits.FruitList;
+import Fruits.Fruit;
 
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println(Utils.selectFruitByLetterD(FruitList.createlis()));
+        Utils.selectFruitColorRed(Fruit.listFruit()).forEach(r->{
+            System.out.println(r.fruitName);
+        });
 
     }
 }
